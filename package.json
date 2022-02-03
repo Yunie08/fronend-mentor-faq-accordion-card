@@ -1,0 +1,14 @@
+{
+  "name": "fem-faq-accordion-card",
+  "version": "1.0.0",
+  "description": "Frontend mentor - FAQ accordion card challenge",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./scss/style.scss:./css/style.css"
+  },
+  "author": "Ambre Gorias",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
