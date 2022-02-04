@@ -15,90 +15,83 @@
     <link rel="stylesheet" href="css/style.css" />
 
     <title>Frontend Mentor | FAQ Accordion Card</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    
   </head>
-  <body class="min-vh-100 position-relative">
-    <main class="container col-12">
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <img class="w-75" src="./images/illustration-woman-online-mobile.svg" alt="Illustration of a woman in front of a large screen">
-        </div>
-        <section class="col-12 col-md-6">
-          <h1 class="text-center mb-4">FAQ</h1>
-          <div class="accordion accordion-flush" id="faqAccordion">
+  <body>
+    <main class="faq">
+      <div class="faq__image__container">
+        <picture>
+          <source media="(min-width: 768px)" srcset="images/illustration-woman-online-desktop.svg">
+          <source media="(max-width: 767px)" srcset="images/illustration-woman-online-mobile.svg">
+          <img src="images/illustration-woman-online-desktop.svg" alt="Woman standing in front of a large screen">
+        </picture>
+      </div>
+          <h1 class="title">FAQ</h1>
 
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          <div class="accordion" id="accordionGroup">
+
+            <div class="accordion__item">
+              <h2 class="accordion__header" id="headingOne">
+                <button class="accordion__button" aria-expanded="false" aria-controls="sectionOne">
                   How many team members can I invite?
                 </button>
               </h2>
-              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
+              <div id="sectionOne" class="accordion__section">
+                <p class="accordion__body">
                   You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.
-                </div>
+                </p>
               </div>
             </div>
 
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            <div class="accordion__item">
+              <h2 class="accordion__header" id="headingTwo">
+                <button class="accordion__button" aria-expanded="false" aria-controls="sectionTwo">
                   What is the maximum file upload size?
                 </button>
               </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
+              <div id="sectionTwo" class="accordion__section">
+                <p class="accordion__body">
                   No more than 2GB. All files in your account must fit your allotted storage space.
-                </div>
+                </p>
               </div>
             </div>
 
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingThree">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"" aria-expanded="false" aria-controls="collapseThree"">
+            <div class="accordion__item">
+              <h2 class="accordion__header" id="headingThree">
+                <button class="accordion__button" aria-expanded="false" aria-controls="sectionThree">
                   How do I reset my password?
                 </button>
               </h2>
-              <div id="collapseThree"" class="accordion-collapse collapse" aria-labelledby="headingThree"" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
+              <div id="sectionThree" class="accordion__section">
+                <p class="accordion__body">
                   Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.
-                </div>
+                </p>
               </div>
             </div>
 
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingFour">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            <div class="accordion__item">
+              <h2 class="accordion__header" id="headingFour">
+                <button class="accordion__button" aria-expanded="false" aria-controls="sectionFour">
                   Can I cancel my subscription?
                 </button>
               </h2>
-              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
+              <div id="sectionFour" class="accordion__section">
+                <p class="accordion__body">
                   Yes! Send us a message and we’ll process your request no questions asked.
-                </div>
+                </p>
               </div>
             </div>
 
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingFive">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            <div class="accordion__item">
+              <h2 class="accordion__header" id="headingFive">
+                <button class="accordion__button" aria-expanded="false" aria-controls="sectionFive">
                   Do you provide additional support? 
                 </button>
               </h2>
-              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
+              <div id="sectionFive" class="accordion__section">
+                <p class="accordion__body">
                   Chat and email support is available 24/7. Phone lines are open during normal business hours.
-                </div>
+                </p>
               </div>
             </div>
 
@@ -107,7 +100,7 @@
       </div>
     </main>
     
-    <div class="attribution position-absolute bottom-0 start-50 translate-middle">
+    <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
