@@ -4,11 +4,8 @@
   "description": "Frontend mentor - FAQ accordion card challenge",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./scss/style.scss:./css/style.css"
+    "sass": "sass --watch ./scss/main.scss:./css/style.css"
   },
   "author": "Ambre Gorias",
-  "license": "ISC",
-  "dependencies": {
-    "bootstrap": "^5.1.3"
-  }
+  "license": "ISC"
 }
