@@ -7,30 +7,34 @@
     position: relative;
     width: 100%;
     text-align: left;
+    transition: font-weight 250ms;
+
+    &[aria-expanded="true"] {
+      font-weight: 700;
+      transition: font-weight 200ms;
+    }
 
     &::after {
       content: url(../../images/icon-arrow-down.svg);
       position: absolute;
       right: 0px;
-      transition: transform 150ms;
-    }
-
-    &[aria-expanded="true"] {
-      font-weight: 700;
+      transition: transform 100ms;
     }
 
     &[aria-expanded="true"]::after {
       transform: rotate(180deg);
-      transition: transform 150ms;
+      transition: transform 200ms;
     }
   }
 
   &__section {
     max-height: 0vh;
+    transition: max-height 150ms ease-out;
     overflow: hidden;
 
     &[aria-hidden="false"] {
-      max-height: auto;
+      max-height: 100vh;
+      transition: max-height 500ms ease-in-out;
       visibility: visible;
     }
   }
@@ -38,5 +42,4 @@
   &__body {
     padding-bottom: 1.6rem;
   }
-
 }

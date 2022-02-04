@@ -7,5 +7,9 @@
     "sass": "sass --watch ./scss/main.scss:./css/style.css"
   },
   "author": "Ambre Gorias",
-  "license": "ISC"
+  "license": "ISC",
+  "homepage": "https://github.com/Yunie08/P5-Dev-Web-Kanap#readme",
+  "jshintConfig": {
+    "esversion": 6
+  }
 }
