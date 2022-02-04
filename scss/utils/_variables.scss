@@ -21,3 +21,8 @@ $font-sizes-large : (
   title-h2: 1.4rem,
 );
 
+/* Breakpoints */
+$breakpoints:(
+  tablet: 768px,
+  desktop: 991px
+);

@@ -11,102 +11,134 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
 
     <title>Frontend Mentor | FAQ Accordion Card</title>
-    
   </head>
   <body>
     <main class="faq">
       <div class="faq__image__container">
         <picture>
-          <source media="(min-width: 768px)" srcset="images/illustration-woman-online-desktop.svg">
-          <source media="(max-width: 767px)" srcset="images/illustration-woman-online-mobile.svg">
-          <img src="images/illustration-woman-online-desktop.svg" alt="Woman standing in front of a large screen">
+          <source
+            media="(min-width: 768px)"
+            srcset="images/illustration-woman-online-desktop.svg"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="images/illustration-woman-online-mobile.svg"
+          />
+          <img
+            src="images/illustration-woman-online-desktop.svg"
+            alt="Woman standing in front of a large screen"
+          />
         </picture>
       </div>
-          <h1 class="title">FAQ</h1>
+      <section class="faq__container">
+        <h1 class="faq__title">FAQ</h1>
 
-          <div class="accordion" id="accordionGroup">
-
-            <div class="accordion__item">
-              <h2 class="accordion__header" id="headingOne">
-                <button class="accordion__button" aria-expanded="false" aria-controls="sectionOne">
-                  How many team members can I invite?
-                </button>
-              </h2>
-              <div id="sectionOne" class="accordion__section">
-                <p class="accordion__body">
-                  You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.
-                </p>
-              </div>
+        <div class="accordion" id="accordionGroup">
+          <div class="accordion__item">
+            <h2 class="accordion__header" id="headingOne">
+              <button
+                class="accordion__button"
+                aria-expanded="false"
+                aria-controls="sectionOne"
+              >
+                How many team members can I invite?
+              </button>
+            </h2>
+            <div id="sectionOne" class="accordion__section" aria-hidden="true">
+              <p class="accordion__body">
+                You can invite up to 2 additional users on the Free plan. There
+                is no limit on team members for the Premium plan.
+              </p>
             </div>
+          </div>
 
-            <div class="accordion__item">
-              <h2 class="accordion__header" id="headingTwo">
-                <button class="accordion__button" aria-expanded="false" aria-controls="sectionTwo">
-                  What is the maximum file upload size?
-                </button>
-              </h2>
-              <div id="sectionTwo" class="accordion__section">
-                <p class="accordion__body">
-                  No more than 2GB. All files in your account must fit your allotted storage space.
-                </p>
-              </div>
+          <div class="accordion__item">
+            <h2 class="accordion__header" id="headingTwo">
+              <button
+                class="accordion__button"
+                aria-expanded="false"
+                aria-controls="sectionTwo"
+              >
+                What is the maximum file upload size?
+              </button>
+            </h2>
+            <div id="sectionTwo" class="accordion__section" aria-hidden="true">
+              <p class="accordion__body">
+                No more than 2GB. All files in your account must fit your
+                allotted storage space.
+              </p>
             </div>
+          </div>
 
-            <div class="accordion__item">
-              <h2 class="accordion__header" id="headingThree">
-                <button class="accordion__button" aria-expanded="false" aria-controls="sectionThree">
-                  How do I reset my password?
-                </button>
-              </h2>
-              <div id="sectionThree" class="accordion__section">
-                <p class="accordion__body">
-                  Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.
-                </p>
-              </div>
+          <div class="accordion__item">
+            <h2 class="accordion__header" id="headingThree">
+              <button
+                class="accordion__button"
+                aria-expanded="false"
+                aria-controls="sectionThree"
+              >
+                How do I reset my password?
+              </button>
+            </h2>
+            <div id="sectionThree" class="accordion__section" aria-hidden="true">
+              <p class="accordion__body">
+                Click “Forgot password” from the login page or “Change password”
+                from your profile page. A reset link will be emailed to you.
+              </p>
             </div>
+          </div>
 
-            <div class="accordion__item">
-              <h2 class="accordion__header" id="headingFour">
-                <button class="accordion__button" aria-expanded="false" aria-controls="sectionFour">
-                  Can I cancel my subscription?
-                </button>
-              </h2>
-              <div id="sectionFour" class="accordion__section">
-                <p class="accordion__body">
-                  Yes! Send us a message and we’ll process your request no questions asked.
-                </p>
-              </div>
+          <div class="accordion__item">
+            <h2 class="accordion__header" id="headingFour">
+              <button
+                class="accordion__button"
+                aria-expanded="false"
+                aria-controls="sectionFour"
+              >
+                Can I cancel my subscription?
+              </button>
+            </h2>
+            <div id="sectionFour" class="accordion__section" aria-hidden="true">
+              <p class="accordion__body">
+                Yes! Send us a message and we’ll process your request no
+                questions asked.
+              </p>
             </div>
+          </div>
 
-            <div class="accordion__item">
-              <h2 class="accordion__header" id="headingFive">
-                <button class="accordion__button" aria-expanded="false" aria-controls="sectionFive">
-                  Do you provide additional support? 
-                </button>
-              </h2>
-              <div id="sectionFive" class="accordion__section">
-                <p class="accordion__body">
-                  Chat and email support is available 24/7. Phone lines are open during normal business hours.
-                </p>
-              </div>
+          <div class="accordion__item">
+            <h2 class="accordion__header" id="headingFive">
+              <button
+                class="accordion__button"
+                aria-expanded="false"
+                aria-controls="sectionFive"
+              >
+                Do you provide additional support?
+              </button>
+            </h2>
+            <div id="sectionFive" class="accordion__section" aria-hidden="true">
+              <p class="accordion__body">
+                Chat and email support is available 24/7. Phone lines are open
+                during normal business hours.
+              </p>
             </div>
-
-          <div>
-        </section>
-      </div>
+          </div>
+        </div>
+      </section>
     </main>
-    
+
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Yunie08</a>.
     </div>
-
-
   </body>
 </html>

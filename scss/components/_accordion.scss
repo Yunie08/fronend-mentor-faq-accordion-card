@@ -1,0 +1,42 @@
+.accordion {
+  &__item {
+    border-bottom: solid 1px $color-neutral-light;
+  }
+  &__button {
+    padding: 1.8rem 0;
+    position: relative;
+    width: 100%;
+    text-align: left;
+
+    &::after {
+      content: url(../../images/icon-arrow-down.svg);
+      position: absolute;
+      right: 0px;
+      transition: transform 150ms;
+    }
+
+    &[aria-expanded="true"] {
+      font-weight: 700;
+    }
+
+    &[aria-expanded="true"]::after {
+      transform: rotate(180deg);
+      transition: transform 150ms;
+    }
+  }
+
+  &__section {
+    max-height: 0vh;
+    overflow: hidden;
+
+    &[aria-hidden="false"] {
+      max-height: auto;
+      visibility: visible;
+    }
+  }
+
+  &__body {
+    padding-bottom: 1.6rem;
+  }
+
+}
