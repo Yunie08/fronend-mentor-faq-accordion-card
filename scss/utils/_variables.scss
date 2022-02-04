@@ -1,0 +1,23 @@
+/* Color palette */
+$color-primary: hsl(238, 29%, 16%);
+$color-secondary: hsl(14, 88%, 65%);
+
+$color-gradient-bottom: hsl(240, 73%, 65%);
+$color-gradient-top: hsl(273, 75%, 66%);
+
+$color-neutral-very-dark: hsl(237, 12%, 33%);
+$color-neutral-dark: hsl(240, 6%, 50%);
+$color-neutral-light: hsl(240, 5%, 91%);
+
+
+/* Font size */
+$font-sizes-mobile : (
+  title-h1: 3.2rem,
+  title-h2: 1.3rem,
+  main: 1.2rem
+);
+
+$font-sizes-large : (
+  title-h2: 1.4rem,
+);
+
