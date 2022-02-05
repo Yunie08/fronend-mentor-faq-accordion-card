@@ -15,9 +15,21 @@ html {
 body {
   box-sizing: border-box;
   position: relative;
-  height: 100%;
+  -webkit-tap-highlight-color: transparent;
   min-height: 100vh;
   background: linear-gradient($color-gradient-top, $color-gradient-bottom);
+  padding: 14.8rem 0 8.5rem 0;
+
+  @include tablet-up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20rem;
+  }
+
+  @include desktop {
+    padding: 0;
+  }
 }
 
 button {

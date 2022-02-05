@@ -4,10 +4,11 @@
   left: 50%;
   transform: translateX(-50%);
   font-size: 11px;
+  color: #fff;
   text-align: center;
   z-index: -1;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: $color-secondary;
 }
