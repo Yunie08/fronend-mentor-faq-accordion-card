@@ -7,7 +7,7 @@
     position: relative;
     width: 100%;
     text-align: left;
-    transition: font-weight 250ms;
+    // transition: font-weight 250ms;
 
     &[aria-expanded="true"] {
       font-weight: 700;
@@ -18,7 +18,7 @@
       content: url(../../images/icon-arrow-down.svg);
       position: absolute;
       right: 0px;
-      transition: transform 100ms;
+      // transition: transform 100ms;
     }
 
     &[aria-expanded="true"]::after {
@@ -29,7 +29,7 @@
 
   &__section {
     max-height: 0vh;
-    transition: max-height 150ms ease-out;
+    // transition: max-height 150ms ease-out;
     overflow: hidden;
 
     &[aria-hidden="false"] {

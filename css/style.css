@@ -12,13 +12,14 @@
 
 html {
   font-size: 62.5%;
+  min-height: 100vh;
 }
 
 body {
   box-sizing: border-box;
-  min-height: 100vh;
-  width: 100%;
   position: relative;
+  height: 100%;
+  min-height: 100vh;
   background: linear-gradient(#af67e9, #6565e7);
 }
 
@@ -61,7 +62,6 @@ p {
   position: relative;
   width: 100%;
   text-align: left;
-  transition: font-weight 250ms;
 }
 .accordion__button[aria-expanded=true] {
   font-weight: 700;
@@ -71,7 +71,6 @@ p {
   content: url(../../images/icon-arrow-down.svg);
   position: absolute;
   right: 0px;
-  transition: transform 100ms;
 }
 .accordion__button[aria-expanded=true]::after {
   transform: rotate(180deg);
@@ -79,7 +78,6 @@ p {
 }
 .accordion__section {
   max-height: 0vh;
-  transition: max-height 150ms ease-out;
   overflow: hidden;
 }
 .accordion__section[aria-hidden=false] {
@@ -112,7 +110,6 @@ p {
   padding: 4.8rem 2.4rem;
   margin: 0 2.4rem;
   margin-top: 142.5px;
-  margin-bottom: 3rem;
   border-radius: 2.3rem;
   box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
 }
@@ -121,7 +118,8 @@ p {
   display: flex;
 }
 .faq__image__container picture {
-  width: 23.7rem;
+  max-width: 23.7rem;
+  width: 100%;
   margin: -15.5rem auto 0 auto;
   position: relative;
 }
@@ -129,6 +127,7 @@ p {
   content: url(../images/bg-pattern-mobile.svg);
   position: absolute;
   width: 100%;
+  max-width: 100%;
   left: 50%;
   transform: translateX(-50%);
   bottom: 26px;
@@ -138,6 +137,8 @@ p {
   flex-direction: column;
   align-items: center;
   row-gap: 1.2rem;
+  width: 100%;
+  overflow: wrap;
 }
 
 /*# sourceMappingURL=style.css.map */
