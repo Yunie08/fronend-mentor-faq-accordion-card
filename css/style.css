@@ -12,20 +12,21 @@
 
 html {
   font-size: 62.5%;
-  min-height: 100vh;
 }
 
 body {
+  height: 100%;
+  min-height: 100vh;
   box-sizing: border-box;
   position: relative;
   -webkit-tap-highlight-color: transparent;
-  min-height: 100vh;
   background: linear-gradient(#af67e9, #6565e7);
   padding: 14.8rem 0 8.5rem 0;
 }
 @media screen and (min-width: 768px) {
   body {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding-top: 20rem;
@@ -43,14 +44,12 @@ button {
   background: none;
   cursor: pointer;
 }
-button:focus {
-  outline: none;
+button:focus-visible {
+  outline: 2px solid #f47c57;
+  outline-offset: 1px;
 }
-@media screen and (min-width: 1024px) {
-  button:focus {
-    outline: 2px solid #f47c57;
-    outline-offset: 1px;
-  }
+button:focus:not(:focus-visible) {
+  outline: none;
 }
 
 body {
@@ -141,8 +140,7 @@ p {
   display: grid;
   grid-template-columns: 1fr;
   background: #fff;
-  padding: 4.8rem 2.4rem;
-  padding-bottom: 0;
+  padding: 4.8rem 2.4rem 0 2.4rem;
   margin: 0 2.4rem;
   border-radius: 2.3rem;
   box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
