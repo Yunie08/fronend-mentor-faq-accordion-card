@@ -18,6 +18,9 @@ body {
   -webkit-tap-highlight-color: transparent;
   min-height: 100vh;
   background: linear-gradient($color-gradient-top, $color-gradient-bottom);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 14.8rem 0 8.5rem 0;
 
   @include tablet-up {

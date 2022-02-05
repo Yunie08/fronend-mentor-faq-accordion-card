@@ -3,13 +3,20 @@
     border-bottom: solid 1px $color-neutral-light;
   }
   &__button {
-    padding: 1.8rem 0;
+    padding: 1.735rem 0;
     position: relative;
     width: 100%;
     text-align: left;
     // transition: font-weight 250ms;
 
+    &:hover,
+    &:focus {
+      color: $color-secondary;
+      transition: color 90ms;
+    }
+
     &[aria-expanded="true"] {
+      color: $color-primary;
       font-weight: 700;
       transition: font-weight 200ms;
     }
@@ -25,6 +32,8 @@
       transform: rotate(180deg);
       transition: transform 200ms;
     }
+
+
   }
 
   &__section {
