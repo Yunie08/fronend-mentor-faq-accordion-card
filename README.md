@@ -1,6 +1,6 @@
 # Frontend Mentor - GitHub user search app solution
 
-This is my solution to the [FAQ accordion card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/github-user-search-app-Q09YOgaH6). 
+This is my solution to the [FAQ accordion card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam). 
 
 ## Table of contents
 
@@ -10,9 +10,6 @@ This is my solution to the [FAQ accordion card challenge on Frontend Mentor](htt
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 
@@ -33,40 +30,19 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github user search app - Go to Github Repository](https://github.com/Yunie08/frontend-mentor-github-user-search-app.git)
-- Live Site URL: [Github user search app - Go to live site](https://yunie08.github.io/frontend-mentor-github-user-search-app/)
+- Solution URL: [FAQ accordion card - Go to Github Repository](https://github.com/Yunie08/fronend-mentor-faq-accordion-card.git)
+- Live Site URL: [FAQ accordion card - Go to live site](https://yunie08.github.io/fronend-mentor-faq-accordion-card/)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- SASS
 - Flexbox
 - CSS Grid
 - Javascript
 - Mobile-first workflow
-
-
-### What I learned
-
-- How to implement a dark mode
-- How to have the correct color scheme chosen for the user based on their computer preferences
-- This project also allowed me to gain more experience with fetching APIs.
-
-
-### Continued development
-
-- __Improvement on this project:__
-  - Currently working on implementing a cleaner solution for dark mode 
-  - I would like to implement a delayed rendering of the page until API fetch is done
-  - Add backup values in case variables are not correctly loaded
-
-
-### Useful resources
-
-- [Great article about prefers-color-scheme](https://web.dev/prefers-color-scheme/) - This helped me with dark mode and prefers-color-scheme
-- [Great article about dark mode](https://www.ditdot.hr/en/dark-mode-website-tutorial) - This helped me with dark mode
 
 
 ## Author
