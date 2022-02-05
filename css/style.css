@@ -44,8 +44,13 @@ button {
   cursor: pointer;
 }
 button:focus {
-  outline-offset: 1px;
-  outline-color: #f47c57;
+  outline: none;
+}
+@media screen and (min-width: 1024px) {
+  button:focus {
+    outline: 2px solid #f47c57;
+    outline-offset: 1px;
+  }
 }
 
 body {
@@ -137,10 +142,12 @@ p {
   grid-template-columns: 1fr;
   background: #fff;
   padding: 4.8rem 2.4rem;
+  padding-bottom: 0;
   margin: 0 2.4rem;
   border-radius: 2.3rem;
   box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
-  height: 535px;
+  align-items: flex-start;
+  grid-template-rows: min-content minmax(40rem, min-content);
 }
 @media screen and (min-width: 768px) {
   .faq {
@@ -245,7 +252,6 @@ p {
   flex-direction: column;
   row-gap: 1.2rem;
   width: 100%;
-  overflow: wrap;
   align-content: flex-start;
   justify-content: flex-start;
   align-self: flex-start;

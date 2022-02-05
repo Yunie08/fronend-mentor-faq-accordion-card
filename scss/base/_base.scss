@@ -40,7 +40,10 @@ button {
   cursor: pointer;
 
   &:focus {
-    outline-offset: 1px;
-    outline-color: $color-secondary;
+    outline: none;
+    @include desktop {
+      outline: 2px solid $color-secondary;
+      outline-offset: 1px;
+    }
   }
 }
