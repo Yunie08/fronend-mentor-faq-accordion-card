@@ -4,12 +4,14 @@
   "description": "Frontend mentor - FAQ accordion card challenge",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./scss/main.scss:./css/style.css"
+    "sass": "sass --watch ./scss/main.scss:./css/style.css",
+    "prefix": "postcss css/style.css --use autoprefixer -d css/prefixed/"
   },
   "author": "Ambre Gorias",
   "license": "ISC",
   "homepage": "https://github.com/Yunie08/P5-Dev-Web-Kanap#readme",
   "jshintConfig": {
     "esversion": 6
-  }
+  },
+  "browserslist": "last 4 versions"
 }
