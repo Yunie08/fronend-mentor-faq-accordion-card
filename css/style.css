@@ -21,9 +21,6 @@ body {
   -webkit-tap-highlight-color: transparent;
   min-height: 100vh;
   background: linear-gradient(#af67e9, #6565e7);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 14.8rem 0 8.5rem 0;
 }
 @media screen and (min-width: 768px) {
