@@ -29,12 +29,12 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 20rem;
+    padding: 20rem 0;
   }
 }
 @media screen and (min-width: 1024px) {
   body {
-    padding: 0;
+    padding: 5rem 0;
   }
 }
 
@@ -201,7 +201,7 @@ p {
 }
 .faq__image__container picture::before {
   content: "";
-  background: url(../images/bg-pattern-mobile.svg);
+  background: url(../../images/bg-pattern-mobile.svg);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: bottom 2.8rem center;
@@ -216,7 +216,7 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .faq__image__container picture::before {
-    background: url(../images/bg-pattern-desktop.svg) no-repeat;
+    background: url(../../images/bg-pattern-desktop.svg) no-repeat;
     background-size: auto;
     background-position: bottom -14.1rem right 7rem;
   }
@@ -230,7 +230,7 @@ p {
   }
 }
 .faq__overflow {
-  background: url(../images/illustration-box-desktop.svg) no-repeat;
+  background: url(../../images/illustration-box-desktop.svg) no-repeat;
   background-position: center;
   z-index: 100;
   width: 100%;
