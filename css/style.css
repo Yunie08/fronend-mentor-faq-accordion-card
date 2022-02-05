@@ -46,6 +46,10 @@ button {
   background: none;
   cursor: pointer;
 }
+button:focus {
+  outline-offset: 1px;
+  outline-color: #f47c57;
+}
 
 body {
   font-family: "Kumbh Sans", sans-serif;
@@ -80,7 +84,7 @@ p {
   border-bottom: solid 1px #e7e7e9;
 }
 .accordion__button {
-  padding: 1.735rem 0;
+  padding: 1.735rem 0.3rem;
   position: relative;
   width: 100%;
   text-align: left;
@@ -139,6 +143,7 @@ p {
   margin: 0 2.4rem;
   border-radius: 2.3rem;
   box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
+  height: 535px;
 }
 @media screen and (min-width: 768px) {
   .faq {
